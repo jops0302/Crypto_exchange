@@ -1,0 +1,88 @@
+con las expresiones puedes poner casi todo tipo de javascript, excepto un if un else tipo asi
+
+atributos dinamicos
+
+-----------------------
+control de flujo de directivas
+
+mostrar un elemento cuando se cumple cierta condicion y cuando no se cumple
+
+el vi-show: utilizarlo cuando queremos varias veces que cambie 
+y el v-if solo para cuando necesitemos comprobar solo una vez
+
+
+-------------
+v-for: puedo recorrer listas y objetos
+
+
+
+
+-------------------
+manejo de eventos
+v-on
+
+v-bind: podemos usar una ternari un string
+
+
+---------------------
+propiedades computadas = computed properties y watchers
+
+computed properties:ejecutan un valor
+
+watchers: ejecutan un codigo7
+
+las propiedades computadas se calculan en tiempo real
+
+
+------------------
+nueva directica
+
+
+---------------------
+sistemas de componentes
+
+-----
+la comunicacion de prades a hijos es atravez de propiedades y la comunicacion de hijos a padres es atravez de eventos
+
+
+--------------
+created(){
+    sirve para obtener informacion de una api res
+}
+
+mounted(){
+    sivre mas que todo para acceder al dom
+}
+
+-------------
+single file components=componentes de un solo archivo
+
+
+
+
+-----------
+comandos vacicos para el cli
+
+create
+correrlo localmente
+chequear errores
+interfaz de usuario amigable
+
+-----------
+PARA REDIRECCIONAR A OTRA PAGINA ES CON TO:
+
+remplazar v-on por un @
+
+
+los pronlemas de reactividad solo los podemos obtener en objetos y arrays cuando queremos agregar cosas desde el principio
+El problema de reactividad se origina por que vue no puede detectar si una propiedad existe debido a que fue agregada después que el objeto se creo y esta propiedad no esta siendo rastreada por vue.
+Para solucionarlo:
+this.$set(this.someObject, ‘propiedadNueva’, valor)
+
+
+cuando cambias a otra pagina y de esa pagina quieres ir a otra pagina con vue.router no es posible la solucion es la siguiente
+  watch: {
+    $route () {
+      this.getCoin()
+    },
+  }
