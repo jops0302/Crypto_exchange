@@ -10,25 +10,25 @@ Proyecto para obtener las cotizaciones de las cryptomonedas mas importantes a tr
 ![localhost_8080_ (1)](https://user-images.githubusercontent.com/54915231/85248093-7ba5d580-b415-11ea-9e34-cfe86f4d563b.png)
 
 
-## Project setup
+## configuración del proyecto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### compila y recarga
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### compila y minimisa para producción
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Limpia y corrige archivos
 ```
 npm run lint
 ```
 
-### Customize configuration
+### Personalizar la configuración
 See [Configuration Reference](https://cli.vuejs.org/config/).
